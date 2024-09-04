@@ -1,2 +1,1 @@
-"# System-Admin---Scripts" 
-"# System-Admin---Scripts" 
+Every script has it's one "Info" section at the top of the code.
