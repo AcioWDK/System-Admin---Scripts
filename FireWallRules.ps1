@@ -52,9 +52,9 @@ $appBasename = $appName.BaseName
 $outboundDisplayName = $appBasename +"OutBound"
 $inboundDisplayName = $appBasename +"InbBound"
 
-    New-NetFirewallRule -Program $appPath -Action Block -Profile Domain, Private, Public -DisplayName $outboundDisplayName -Description “Block $appBasename Outbound” -Direction Outbound 
+    New-NetFirewallRule -Program $appPath -Action Block -Profile Domain, Private, Public -DisplayName $outboundDisplayName -Description "Block $appBasename Outbound" -Direction Outbound 
     Write-Host "outcount created for $appbasename"    
-    New-NetFirewallRule -Program $appPath -Action Block -Profile Domain, Private, Public -DisplayName $inboundDisplayName -Description “Block $appBasename Inbound” -Direction Inbound
+    New-NetFirewallRule -Program $appPath -Action Block -Profile Domain, Private, Public -DisplayName $inboundDisplayName -Description "Block $appBasename Inbound" -Direction Inbound
     Write-Host "inbound created for $appbasename"
 
 
